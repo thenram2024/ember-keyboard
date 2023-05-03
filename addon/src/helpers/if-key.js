@@ -3,7 +3,7 @@ import { assert } from '@ember/debug';
 import isKey from '../utils/is-key';
 import listenerName from '../utils/listener-name';
 
-export default helper(function ifKey([keyCombo, callback] /*, named*/) {
+export function ifKey([keyCombo, callback] /*, named*/) {
   return function (event) {
     assert(
       'ember-keyboard: You must pass a function as the second argument to the `if-key` helper',
@@ -18,4 +18,6 @@ export default helper(function ifKey([keyCombo, callback] /*, named*/) {
       callback(event);
     }
   };
-});
+}
+
+export default helper(ifKey);
