@@ -54,14 +54,9 @@
     "prettier": "^2.8.0",
     "rollup": "^2.79.0"
   },
-  "peerDependencies": {
-    "@ember/test-helpers": "^2.6.0"
-  },
-  "peerDependenciesMeta": {
-    "@ember/test-helpers": {
-      "optional": true
-    }
-  },
+"overrides": {
+  "@ember/test-helpers": "^2.6.0"
+},
   "engines": {
     "node": "12.* || 14.* || >= 16"
   },
