@@ -79,7 +79,6 @@ jobs:
         run: yarn install --no-lockfile
 
       - name: Run Tests
-        run: yarn upgrade ember-cli-fastboot json-stable-stringify
         run: yarn test:ember
         working-directory: test-app
 
